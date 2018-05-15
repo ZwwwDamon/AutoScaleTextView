@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.damon.autoscaletextview.AutoScaleTextView
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:id="@+id/astv_main"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:background="@drawable/bg_autoscaletextview"
+        android:lines="1"
+        android:text="Hello World!"
+        android:textSize="16sp"
+        app:minTextSize="8sp"
+        />
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btn_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/astv_main"
+        android:layout_marginTop="20dp"
+        android:text="改变AutoScaleTextView内容"
+        android:textSize="14sp"/>
+</RelativeLayout>
